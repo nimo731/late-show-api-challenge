@@ -10,7 +10,7 @@ def create_app():
     app.config.from_object('server.config')
     db.init_app(app)
     migrate.init_app(app, db)
-    # Register blueprints here
+ 
 
     @app.route('/')
     def index():
